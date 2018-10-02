@@ -37,7 +37,7 @@ int* array_merge(int num_arrays, int* sizes, int** values) {
 	for(int i = 0; i < num_arrays; i++){
 		
 		for(int j = 0; j < sizes[i]; j++){
-			if (!contains_element(values[i][j], max_size, values[i])){
+			if (!contains_element(values[i][j], max_size, unique_values)){
 			unique_values[unique_count] = values[i][j];
 			unique_count++;
 			}
@@ -50,7 +50,7 @@ int* array_merge(int num_arrays, int* sizes, int** values) {
 
 	merged_elements[0] = unique_count;
 
-	for(int i = 1; i <= unique_count; i++) {
+	for(int i = 1; i < unique_count; i++) {
 	merged_elements[i] = unique_values[i - 1];
 	}
 
