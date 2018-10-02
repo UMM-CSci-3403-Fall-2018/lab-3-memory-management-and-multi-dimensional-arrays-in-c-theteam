@@ -1,0 +1,6 @@
+Allocate number of elements for each array in values
+Check if value in value array is unique by looping through contents of unique array
+Record how far you've gotten in the unique array when finished with a given array in values
+Sum the numbers of how far we got in each unique array
+Allocate this number to the master unique array
+Loop through master unique array to check if value in unique array is duplicated
