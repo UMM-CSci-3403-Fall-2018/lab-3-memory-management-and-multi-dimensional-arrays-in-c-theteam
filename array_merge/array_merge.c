@@ -55,7 +55,11 @@ int* array_merge(int num_arrays, int* sizes, int** values) {
 	}
 
 	mergesortRange(merged_elements, 1, unique_count + 1);	// Sort the elements in the new array
-	free(unique_values);	
+	
+	
+	free(unique_values);
+
+
 	
 	return merged_elements;
 }
