@@ -5,6 +5,13 @@
 
 #include "mergesort.h"
 
+
+    /*
+     * Assume that the two ranges are sorted:
+     *   (forall i | startIndex <= i <= j < midPoint : values[i] <= values[j])
+     *   (forall i | midPoint <= i <= j < endIndex : values[i] <= values[j])
+     * then merge them into a single sorted array, copy that back, and return.
+     */
 void mergeRanges(int* values, int startIndex, int midPoint, int endIndex) {
 	int rangeSize = endIndex - startIndex;
 	int* destination =(int*) malloc(rangeSize * sizeof(int));
